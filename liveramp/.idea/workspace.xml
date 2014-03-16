@@ -52,7 +52,7 @@
       <file leaf-file-name="default.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/themes/default.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="146" column="0" selection-start="3191" selection-end="3191" vertical-scroll-proportion="0.0" vertical-offset="2115" max-vertical-offset="6180">
+            <state line="27" column="0" selection-start="1237" selection-end="1237" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6165">
               <folding />
             </state>
           </provider>
@@ -71,8 +71,8 @@
         <option value="$PROJECT_DIR$/js/network.js" />
         <option value="$PROJECT_DIR$/js/akka_network.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/css/themes/default.css" />
         <option value="$PROJECT_DIR$/slides.html" />
+        <option value="$PROJECT_DIR$/css/themes/default.css" />
       </list>
     </option>
   </component>
@@ -278,7 +278,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/themes/default.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="146" column="0" selection-start="3191" selection-end="3191" vertical-scroll-proportion="0.0" vertical-offset="2115" max-vertical-offset="6180">
+        <state line="27" column="0" selection-start="1237" selection-end="1237" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6165">
           <folding />
         </state>
       </provider>

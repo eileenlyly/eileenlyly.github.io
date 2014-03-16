@@ -25,7 +25,6 @@
     font-family: 'archistico_simple';
     src: url('../../assets/fonts/archistico_simple-webfont.eot');
     src: url('../../assets/fonts/archistico_simple-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../../assets/fonts/archistico_simple-webfont.svg#amatic-bold') format('svg'),
     url('../../assets/fonts/archistico_simple-webfont.woff') format('woff'),
     url('../../assets/fonts/archistico_simple-webfont.ttf') format('truetype');
     font-weight: bold;
