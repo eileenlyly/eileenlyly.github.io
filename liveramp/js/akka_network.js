@@ -1,28 +1,24 @@
-/**
- * Created by eileenlyly on 2/20/14.
- */
-
-var width = 1300,
-    height = 800;
-
-var force = d3.layout.force()
-    .charge( function(d) { return -100 * Math.sqrt(d.count)} )
-    .linkDistance(80)
-    .gravity(0.9)
-    .alpha(1)
-    .size([width - 250, height]);
-
-var svg = d3.select(document.getElementById("svgDiv"))
-    .append("svg")
-    .attr("width", width)
-    .attr("height", height);
-
-var toolTip = d3.select(document.getElementById("toolTip"));
-var header = d3.select(document.getElementById("header"));
-var header1 = d3.select(document.getElementById("header1"));
-var header2 = d3.select(document.getElementById("header2"));
-
 d3.json("data/akka.json", function(error, graph) {
+
+    var width = 1300,
+        height = 800;
+
+    var force = d3.layout.force()
+        .charge( function(d) { return -100 * Math.sqrt(d.count)} )
+        .linkDistance(80)
+        .gravity(0.9)
+        .alpha(1)
+        .size([width - 250, height]);
+
+    var svg = d3.select(document.getElementById("akka_network_svgDiv"))
+        .append("svg")
+        .attr("width", width)
+        .attr("height", height);
+
+    var toolTip = d3.select(document.getElementById("akka_network_toolTip"));
+    var header = d3.select(document.getElementById("akka_network_header"));
+    var header1 = d3.select(document.getElementById("akka_network_header1"));
+    var header2 = d3.select(document.getElementById("akka_network_header2"));
 
     var kind_to_color = function(d){
         if(d.type == "O") return "#CC99FF";

@@ -22,8 +22,6 @@
 
 	<meta property="og:title" content="Flowtime.js A HTML Presentation Framework">
 	<meta property="og:type" content="website">
-	<meta property="og:url" content="http://flowtime-js.marcolago.com">
-	<meta property="og:image" content="http://flowtime-js.marcolago.com/assets/img/share-image.jpg">
 	<meta property="og:site_name" content="Liveramp">
 	<meta name="description" content="Presentation powered by Flowtime.js.">
 
@@ -31,15 +29,6 @@
 	<link rel="stylesheet" href="css/flowtime.css">
 	<link rel="stylesheet" href="css/themes/default.css">
 
-	
-	<link rel="apple-touch-icon-precomposed" 						href="img/touch-icon-iphone.png">
-	<link rel="apple-touch-icon-precomposed" 	sizes="72x72" 		href="img/touch-icon-ipad.png">
-	<link rel="apple-touch-icon-precomposed" 	sizes="114x114" 	href="img/touch-icon-iphone-retina.png">
-	<link rel="apple-touch-icon-precomposed" 	sizes="144x144" 	href="img/touch-icon-ipad-retina.png">
-	
-	<link rel="apple-touch-startup-image" href="img/startup-640x920.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)">
-	<link rel="apple-touch-startup-image" href="img/startup-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)">
-	
 </head>
 <body class="">
 	
@@ -57,172 +46,191 @@
                     </div>
 				</div>
 			</div>
-			<div id="/section-1/page-2" class="ft-page" data-id="page-2">
-				<h1>What is GitHub?</h1>
-                <ul>
-                    <li><strong>GitHub</strong> is a web-based hosting service for software development projects that use the Git revision control system</li>
-                    <li>Chrome</li>
-                    <li>Safari</li>
-                    <li>Opera</li>
-                    <li>Internet Explorer 10</li>
-                </ul>
-			</div>
-            <div id="/section-1/page-3" class="ft-page" data-id="page-3">
-				<h1>How to collaborate in GitHub?</h1>
-				<ul>
-                    <li>Direct Commit: require write authorization</li>
-                    <li>Fork + Pull Request</li>
-				</ul>
-                <center><img class="stacked-center" src="img/pullreq.gif" height="400" width="650" ></center>
-			</div>
 		</div>
 		<div class="ft-section" data-id="section-2">
 			<div id="/section-2/page-1" class="ft-page" data-id="page-1">
-				<h1>Mastering the Navigation</h1>
-				<p>You can navigate in many ways. The most common way is using the keyboard.</p>
-				<h3>Navigation Keys and default behaviours:</h3>
-				<ul>
-					<li><strong>Down Key</strong> goes to the next page or shows up the next fragment (we’ll see this later).</li>
-					<li><strong>Up Key</strong> goes to the previous page or hides the fragment.</li>
-					<li><strong>Right Key</strong> goes to the adjacent page in the next section <span class="small">(if available, it’s like a grid, otherwise it goes to the last page in the next section).</span></li>
-					<li><strong>Left Key</strong> goes to the adjacent page in the previous section.</li>
-				</ul>
+                <h1>What is GitHub?</h1>
+                <ul>
+                    <li>GitHub is a web-based hosting service for software development projects that use the Git revision control system</li>
+                    <li>GitHub also provides <strong>social coding</strong> functionality, like follow users, watch projects, or comment on issues.</li>
+                    <li>Many popular open source projects are hosted on GitHub, such as jQuery, homebrew, Ruby on Rails, etc.</li>
+                </ul>
 			</div>
 			<div id="/section-2/page-2" class="ft-page" data-id="page-2">
-				<h1>Alternate Navigation Control</h1>
-				<p>Pressing the <strong>Shift Key</strong> you can alternate the the default navigation keys behaviour; let’s see how:</p>
-				<ul>
-					<li><strong>Down Key</strong> goes to the next page skipping all the fragments.</li>
-					<li><strong>Up Key</strong> goes to the previous page skipping all the fragments.</li>
-					<li><strong>Right Key</strong> goes to the first page in the next section.</li>
-					<li><strong>Left Key</strong> goes to the first page in the previous section.</li>
-				</ul>
+                <h1>Collaborative Development Models </h1>
+                <ul>
+                    <li><strong>Commit + Push</strong>   - require push access to the repository</li>
+                    <li><strong>Fork + Pull Request</strong>  - anyone can do that. If your code is appropriate, it can be merged into the origin repository.</li>
+                </ul>
+                <center><img class="stacked-center" src="img/pullreq.gif" height="350" width="600" ></center>
 			</div>
-			<div id="/section-2/page-3" class="ft-page" data-id="page-3">
-				<p>User Collaboration Galaxy - akka</p>
-                <div id="svgDiv" style="position:absolute;bottom:-100px"></div>
-                <div id="toolTip" class="tooltip" style="width:150px; height:80px; position:absolute;">
-                <div id="tooltip_header" class="tooltip_header"></div>
-                    <div class="header-rule"></div>
-                    <div id="tooltip_header1" class="tooltip_header1"></div>
-                    <div id="tooltip_header2" class="tooltip_header1"></div>
-                </div>
-
+            <div id="/section-2/page-3" class="ft-page" data-id="page-3">
+                <h1>Interested Questions</h1>
+                <ol>
+                    <li>What are the collaborative patterns like for open source projects, especially those popular and large ones?</li>
+                    <li>What are the indicators that can predict if a pull request can be merged eventually? </li>
+                    <li>What factors will effect the merge time for pull requests? </li>
+                </ol>
             </div>
 			<div id="/section-2/page-4" class="ft-page" data-id="page-4">
-				<h1>Overview Mode.</h1>
-				<p>You can look at the entire presentation by pressing <strong>ESC Key</strong>.<br>
-					When in Overview Mode you can go back to the Page Mode by pressing again the ESC Key.</p>
-				<p>Try it out!</p>
-				<p><strong class="attention">WARNING! Experimental Feature.</strong> If you experience problems in webkit browser you can use the alternate Overview Mode; see the <a href="https://github.com/marcolago/flowtime.js" target="_blank">documentation</a> for more info.</p>
-			</div>
-			<div id="/section-2/page-5" class="ft-page" data-id="page-5">
-				<h1>Navigating the Overview</h1>
-				<p>In Overview Mode the arrow keys works in the same way as in Page Mode, highlighting the future destination. To navigate to the highlighted page just press <strong>Return or Enter Key</strong> or click on the desired page.</p>
-			</div>
-			<div id="/section-2/page-6" class="ft-page" data-id="page-6">
-				<h1>Navigate via Links or Javascript API</h1>
-				<p>You can links every page by simply building the <code>href</code> value using this schema:</p>
-				<pre><code class="language-markup">
-&lt;a href="#/[section data-id attribute]/[page data-id attribute]"&gt;
-				</code></pre>
-				<p>Where <code>data-id</code> attribute is an optional attribute you can add to every section or page.<br>
-					I.e.: if you want to go to back to the first page <a href="#/section-1/page-1">click here</a> <span class="small">(press <strong>backspace</strong> to come back to this page)</span>.</p>
-				<p>You can also trigger every navigation behaviour using the <strong>Flowtime.js Javascript API</strong>.<br>Take a look at the <a href="https://github.com/marcolago/flowtime.js" target="_blank">documentation</a> if you want to learn more.</p>
-			</div>
-			<div id="/section-2/page-7" class="ft-page" data-id="page-7">
-				<h1>Navigate With History</h1>
-				<p>Flowtime.js offers a full support for the HTML5 History API where available or gracefully degrades on the hashchange event.</p>
-				<p>This means that you can navigate using the browser’s back and forward buttons and deeplink a page for sharing purposes.</p>
-			</div>
-			<div id="/section-2/page-8" class="ft-page" data-id="page-8">
-				<h1>Progress Indicator</h1>
-				<p>You can enable a default progress indicator useful not only to know what’s the current page you are looking, but also as a navigation tool.</p>
-				<p><strong>Look at the bottom right corner</strong> and you can see a miniature of the presentation structure.</p>
-				<p>Clicking on a page thumb will navigate to that page.</p>
+				<h1>Dataset</h1>
+				<p>Extracted from GHTorrent (a Ruby web crawler) by Georgios Gousios.</p>
+                <ul>
+                    <li>It includes data from the most popular repositories on Github, which gives 91 origin projects and their forks.</li>
+                    <li>For each project, retrieved all data including issues, pull requests organizations, followers, stars and labels.</li>
+                </ul>
+
 			</div>
 		</div>
 
 		<div class="ft-section" data-id="section-3">
 			<div id="/section-3/page-1" class="ft-page" data-id="page-1">
-				<h1>Fragments Support</h1>
-				<p>The built in fragments navigation allows to advance step by step inside a page.<br>
-					Press down to try.</p>
-				<p class="ft-fragment">You can discover single elements <span class="ft-fragment">or even a single part of an element, <span class="ft-fragment">one <span class="ft-fragment">at <span class="ft-fragment">a <span class="ft-fragment">time.</span></span></span></span></span></p>
-				<p class="ft-fragment">Fragments navigation is deeply customizable with some configuration options<br>
-					You can learn how in the <a href="https://github.com/marcolago/flowtime.js" target="_blank">documentation</a>.</p>
+                <div class="stack-center">
+                    <h1 class="stacked-center">Data Visualization with d3.js</h1>
+                </div>
 			</div>
 			<div id="/section-3/page-2" class="ft-page" data-id="page-2">
-				<h1>Fragments Unleashed</h1>
-				<p>Fragments can be more than just delayed piece of page.<p>
-				<p>Thanks to some special classes you can add a couple of useful custom behaviours.</p>
-				<ul>
-					<li class="ft-fragment step">The <code>.step</code> fragment will partially fades out;</li>
-					<li class="ft-fragment shy">The <code>.shy</code> fragment will completely hides itself;</li>
-					<li class="ft-fragment">You can use this two special fragment types to easily create special effects.</li>
-				</ul>
-				<p><span class="ft-fragment shy">This</span> <span class="ft-fragment shy">is</span> <span class="ft-fragment shy">a</span> <span class="ft-fragment shy"><code>.shy</code></span> <span class="ft-fragment shy">example!</span></p>
-				<p><span class="ft-fragment step">And</span> <span class="ft-fragment step">this</span> <span class="ft-fragment step">is</span> <span class="ft-fragment step">a</span> <span class="ft-fragment step"><code>.step</code></span> <span class="ft-fragment step">one!</span></p>
+                <h4>Contribution Circle<br>For Reddit</h4>
+                <div id="reddit_circle_bpg" style="position:absolute;bottom:-10px;left:300px;">
+                    <div id="reddit_circle_mainDiv">
+                        <div id="reddit_circle_svgDiv"></div>
+                        <div id="headerRight" style="width:350px; right:200px; position:absolute; top:30px;">
+                            <div class="hint">
+                                <div id="reddit_circle_totalDiv" style="color: #cccccc; font-size:22px; font-weight:bold; margin-top:5px;">
+                                    0 commits
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="reddit_circle_toolTip" class="tooltip" style="width:200px; height:80px; position:absolute; top:100px;right:300px;">
+                        <div id="header1" class="header2"></div>
+                        <div class="header-rule"></div>
+                        <div id="head" class="header"></div>
+                        <div class="header-rule"></div>
+                        <div  id="header2" class="header3"></div>
+                        <div  class="tooltipTail"></div>
+                    </div>
+                </div>
 			</div>
+            <div id="/section-3/page-3" class="ft-page" data-id="page-3">
+                <h4>Contribution Circle</h4>
+                <p>Different projects have different contribution patterns.</p>
+                <img src="img/akka_circle.png" style="width:450px; height:430px;float:left;">
+                <img src="img/homebrew_circle.png" style="width:450px; height:430px;float:right;">
+                <p style="text-align: center;">member commits<br>+<br>pull requests<br><- akka</p>
+                <p style="text-align: center;">pull requests<br> dominated:<br> homebrew -></p>
+            </div>
+            <div id="/section-3/page-4" class="ft-page" data-id="page-4">
+                <h4>User Collaboration Galaxy<br>For akka</h4>
+                <div id="akka_network_svgDiv" style="position:absolute;bottom:-80px;left:200px;"></div>
+                <div id="akka_network_toolTip" class="tooltip" style="width:150px; height:80px; position:absolute;">
+                    <div id="akka_network_tooltip_header" class="tooltip_header"></div>
+                    <div class="header-rule"></div>
+                    <div id="akka_network_tooltip_header1" class="tooltip_header1"></div>
+                    <div id="akka_network_tooltip_header2" class="tooltip_header1"></div>
+                </div>
+            </div>
+            <div id="/section-3/page-5" class="ft-page" data-id="page-5">
+                <h1>Unordered Lists</h1>
+                <ul>
+                    <li>An item.</li>
+                    <li>Another item.</li>
+                    <li>Just another item.</li>
+                    <li>Ok, we get it!</li>
+                </ul>
+            </div>
 		</div>
 
 		<div class="ft-section" data-id="section-4">
 			<div id="/section-4/page-1" class="ft-page" data-id="page-1">
-				<h1>Default HTML Structures</h1>
-				<p>Flowtime.js comes with a default theme that styles the most common HTML structures, like:</p>
-				<h1>1<sup>st</sup> Level Heading</h1>
-				<h2>2<sup>nd</sup> Level Heading</h2>
-				<h3>3<sup>rd</sup> Level Heading</h3>
-				<h4>4<sup>th</sup>, 5<sup>th</sup> and 6<sup>th</sup> Level Heading</h4>
+                <h1>Merge or Not?</h1>
+                <p>Popular projects will receive a bunch of pull requests from a variety groups of users.
+                    However, they have large differences in pull request merge rate:</p>
+                <table style="width:500px;text-align:center;" border="1">
+                    <tr>
+                        <td>Project</td>
+                        <td>Pull Requests</td>
+                        <td>Merged</td>
+                        <td>Merge Rate</td>
+                    </tr>
+                    <tr>
+                        <td><strong>akka</strong></td>
+                        <td>1674</td>
+                        <td>1463</td>
+                        <td>87.4%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>node</strong></td>
+                        <td>1224</td>
+                        <td>34</td>
+                        <td>2.8%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>scalatra</strong></td>
+                        <td>133</td>
+                        <td>118</td>
+                        <td>88.7%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>reddit</strong></td>
+                        <td>415</td>
+                        <td>8</td>
+                        <td>1.9%</td>
+                    </tr>
+                </table>
 			</div>
 			<div id="/section-4/page-2" class="ft-page" data-id="page-2">
-				<h1>Unordered Lists</h1>
-				<ul>
-					<li>An item.</li>
-					<li>Another item.</li>
-					<li>Just another item.</li>
-					<li>Ok, we get it!</li>
+				<h1>Can I Be Merged?</h1>
+                <p>Reputation? Feedback?</p>
+                <img src = "img/reputation.png" style="width: 550px;height: 350px;float:left;">
+				<img src = "img/comment.png" style="width: 550px;height: 350px;float:right;">
 				</ul>
 			</div>
 			<div id="/section-4/page-3" class="ft-page" data-id="page-3">
-				<h1>Ordered Lists</h1>
-				<ol>
-					<li>One.</li>
-					<li>Two.</li>
-					<li>Three.</li>
-					<li>Four.</li>
-				</ol>
-			</div>
+				<h1>Sentiment Analysis with NLTK API</h1>
+                <ul>
+                    <li>Hierarchical classification: neutrality -> polarity</li>
+                    <li>Classifiers trained on both twitter sentiment as well as movie reviews</li>
+                </ul>
+                <pre>
+        $ curl -d "text=But I think there's a slight problem here." http://text-processing.com/api/sentiment/</pre>
+                <pre>
+        {
+            "probability": {
+            "neg": 0.71802050751002522,
+            "neutral": 0.27888716392162544,
+            "pos": 0.28197949248997478},
+            "label": "neg"
+        }</pre>
+            </div>
 			<div id="/section-4/page-4" class="ft-page" data-id="page-4">
-				<h1>Definition Lists</h1>
+				<h1>Mining the Comments</h1>
 				<dl>
-					<dt>One:</dt>
-					<dd>a single unit of everything.</dd>
-					<dt>Two:</dt>
-					<dd>the only even prime number.</dd>
-					<dt>Three:</dt>
-					<dd>without the “h” is a plant.</dd>
-					<dt>Four:</dt>
-					<dd>“Quattro” in italian.</dd>
+					<dt>For each pull request, extract:</dt>
+					<dd>user, creation time, commenters, comment length, neutral, pos, neg</dd>
+					<dt>For projects with large comment dataset, randomly select 70% for training and 30% for validation.</dt>
+                    <dd></dd>
+					<dt>Train the data with Random Forests</dt>
+					<dd>Good for classification with high accuracy</dd>
+                    <dd>Detect variable interaction</dd>
+                    <dd>Training accuracy and variable importance are provided</dd>
 				</dl>
 			</div>
 			<div id="/section-4/page-5" class="ft-page" data-id="page-5">
-				<h1>Quotes and Citations</h1>
-				<p>My favourite quotation: <q>The bad craftsman blames his tools</q>.</p>
-				<blockquote>
-					Sotto un cespo di rose scarlatte dai al rospo the caldo col latte.<br>
-					Sotto un cespo di rose paonazze tocca al rospo lavare le tazze.
-				</blockquote>
-				<p><cite><a href="http://html5doctor.com/blockquote-q-cite/" target="_blank">Quoting and citing with &lt;blockquote&gt;, &lt;q&gt;, &lt;cite&gt;, and the cite attribute</a>	</cite> on HTML5 Doctor.</p>
-			</div>
-			<div id="/section-4/page-6" class="ft-page" data-id="page-6">
-				<h1>Theme and Styling</h1>
-				<p>If you don’t like the default theme or you want to build your own (or both things),<br>
-					or if you want to build a website on top of Flowtime.js,<br>
-					you can write your own theme and replace the default one.</p>
-				<p>Theme and core css are in separate files so you can’t break the layout (unless you override some classes).</p>
-				<h2>Fluid Layout</h2>
-				<p>Everything can be fluid, just use <strong>em</strong>, <strong>rem</strong> and <strong>%</strong> units if you want to make an element resizable.</p>
+				<h1>Classification Results</h1>
+                <dl>
+                    <dt>For each pull request, extract:</dt>
+                    <dd>user, creation time, commenters, comment length, neutral, pos, neg</dd>
+                    <dt>For projects with large comment dataset, randomly select 70% for training and 30% for validation.</dt>
+                    <dd></dd>
+                    <dt>Train the data with Random Forests</dt>
+                    <dd>Good for classification with high accuracy</dd>
+                    <dd>Detect variable interaction</dd>
+                    <dd>Training accuracy and variable importance are provided</dd>
+                </dl>
+
 			</div>
 		</div>
 
@@ -328,12 +336,13 @@
 			</div>
 
 			<div id="/section-8/page-2" class="ft-page" data-id="page-2">
-				<h1>Thank You</h1>
-				<p>Designed and coded by Marco Lago<br>
-					Interaction/Experience/Game/Designer/Developer</p>
-				<p>You can find me on Twitter as <a href="https://twitter.com/marcolago" target="_blank">@marcolago</a></p>
-				<p>If you like this work spread the word, you know how ;)</p>
-				<h2>Have Fun</h2>
+                <div class="stack-center">
+                    <div class="stacked-center">
+                        <h2>Thank you.</h2>
+                        <h2>It's Question Time!</h2>
+                        <img src="img/daftpunktocat-thomas.gif" height="200" width="180" style="float: right">
+                    </div>
+                </div>
 			</div>
 		</div>
 	</div>
@@ -342,6 +351,7 @@
 	<script src="js/flowtime.js"></script>
 	<script src="assets/js/prism.js"></script>
     <script src="js/d3.v3.min.js"></script>
+    <script type="text/javascript" src="js/reddit_circle.js"></script>
     <script src="js/akka_network.js"></script>
 
 	<script type="text/javascript">
@@ -356,15 +366,7 @@
 		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		})();
 		
-		// Configuration API test
 		Flowtime.showProgress(true);
-		// Flowtime.fragmentsOnSide(true);
-		// Flowtime.fragmentsOnBack(true);
-		// Flowtime.useHistory(false);
-		// Flowtime.slideInPx(true);
-		// Flowtime.sectionsSlideToTop(true);
-		// Flowtime.gridNavigation(false);
-		// Flowtime.useOverviewVariant(true);
 		Flowtime.parallaxInPx(true);
 		//
 		// event management
@@ -373,18 +375,7 @@
 		{
 			_gaq.push(['_trackEvent', 'Flowtime', 'Navigation', cacheTitle + ' > ' + document.title.replace("Liveramp | ", "")]);
 			cacheTitle = document.title.replace("Liveramp | ", "");
-			//console.log('section', e.section, 'sectionIndex', e.sectionIndex);
-			//console.log('page', e.page, 'pageIndex', e.);
-			//console.log('pastSectionIndex', e.pastSectionIndex, 'pastPageIndex', e.pastPageIndex);
-			//console.log('prevSection', e.prevSection);
-			//console.log('nextSection', e.nextSection);
-			//console.log('prevPage', e.prevPage);
-			//console.log('nextPage', e.nextPage);
-			//console.log('fragment', e.fragment, + 'fragmentIndex', e.fragmentIndex);
-			//console.log("isOverview", e.isOverview);
-			//console.log('progress:', e.progress, 'total:', e.total);
-			// var value = Math.round(e.progress * 100 / e.total);
-			// console.log('Completion: ' + value + '%');
+
 		}
 		// starts the application with configuration options
 		Flowtime.start();

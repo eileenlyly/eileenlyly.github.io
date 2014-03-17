@@ -47,6 +47,11 @@ body {
 	font-family: "aller", sans-serif;
 }
 
+table,th,td
+{
+    border:1px solid white;
+}
+
 .navigation, .credits, .switches {
 	display: none;
 }
@@ -92,7 +97,7 @@ body {
 
 .flowtime h1 {
     font-family: "archistico_simple";
-	font-size: 3.5rem;
+	font-size: 3rem;
 	line-height: 3rem;
 	margin: 1rem 0 2rem 0;
 }
@@ -110,7 +115,12 @@ body {
 	margin: 2rem 0;
 }
 
-.flowtime h4,
+.flowtime h4{
+    font-family: "archistico_simple";
+    font-size: 2rem;
+    line-height: 2rem;
+    margin: 0rem 0;
+}
 .flowtime h5,
 .flowtime h6 {
 	font-size: 1.75rem;
