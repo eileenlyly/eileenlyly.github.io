@@ -115,7 +115,7 @@
                 </div>
 			</div>
             <div id="/section-3/page-3" class="ft-page" data-id="page-3">
-                <h4>Contribution Circle</h4>
+                <h4>Contribution Circles For Others</h4>
                 <p>Different projects have different contribution patterns.</p>
                 <img src="img/akka_circle.png" style="width:450px; height:430px;float:left;">
                 <img src="img/homebrew_circle.png" style="width:450px; height:430px;float:right;">
@@ -133,13 +133,8 @@
                 </div>
             </div>
             <div id="/section-3/page-5" class="ft-page" data-id="page-5">
-                <h1>Unordered Lists</h1>
-                <ul>
-                    <li>An item.</li>
-                    <li>Another item.</li>
-                    <li>Just another item.</li>
-                    <li>Ok, we get it!</li>
-                </ul>
+                <h4>User Collaboration Galaxy For Others</h4>
+
             </div>
 		</div>
 
@@ -148,7 +143,7 @@
                 <h1>Merge or Not?</h1>
                 <p>Popular projects will receive a bunch of pull requests from a variety groups of users.
                     However, they have large differences in pull request merge rate:</p>
-                <table style="width:500px;text-align:center;" border="1">
+                <center><table style="width:600px;text-align:center;font-size:1.3rem;height:270px;" border="1">
                     <tr>
                         <td>Project</td>
                         <td>Pull Requests</td>
@@ -179,7 +174,7 @@
                         <td>8</td>
                         <td>1.9%</td>
                     </tr>
-                </table>
+                </table></center>
 			</div>
 			<div id="/section-4/page-2" class="ft-page" data-id="page-2">
 				<h1>Can I Be Merged?</h1>
@@ -218,124 +213,119 @@
                     <dd>Training accuracy and variable importance are provided</dd>
 				</dl>
 			</div>
-			<div id="/section-4/page-5" class="ft-page" data-id="page-5">
+            <div id="/section-4/page-5" class="ft-page" data-id="page-5">
+                <h1>Classification Results</h1>
+                <center><table style="width:1100px;text-align:center;font-size:1.3rem;height:370px;" border="1">
+                    <tr>
+                        <td>Project</td>
+                        <td>Train Size</td>
+                        <td>CF-score</td>
+                        <td>Accuracy</td>
+                        <td>Precision</td>
+                        <td>Important Variables</td>
+                    </tr>
+                    <tr>
+                        <td><strong>akka</strong></td>
+                        <td>8120</td>
+                        <td>0.87</td>
+                        <td>0.87</td>
+                        <td>0.93</td>
+                        <td>user_id(0.34), ntl(0.15), cmt_len(0.14)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>homebrew</strong></td>
+                        <td>2106</td>
+                        <td>0.97</td>
+                        <td>0.97</td>
+                        <td>0.50</td>
+                        <td>user_id(0.26), ntl(0.21), pos(0.15)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>scala</strong></td>
+                        <td>1616</td>
+                        <td>0.66</td>
+                        <td>0.66</td>
+                        <td>0.72</td>
+                        <td>user_id(0.24), ntl(0.15), pos(0.13)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>node</strong></td>
+                        <td>1331</td>
+                        <td>0.88</td>
+                        <td>0.89</td>
+                        <td>0.79</td>
+                        <td>user_id(0.37), ntl(0.14), cmt_len(0.13)</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>reddit</strong></td>
+                        <td>318</td>
+                        <td>0.99</td>
+                        <td>0.99</td>
+                        <td>0.92</td>
+                        <td>neg(0.41), pos(0.34), ntl(0.13)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>mongo</strong></td>
+                        <td>48</td>
+                        <td>0.94</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>time(0.42), user_id(0.12), cmt_len(0.11)</td>
+                    </tr>
+                </table></center>
+
+            </div>
+			<div id="/section-4/page-6" class="ft-page" data-id="page-6">
 				<h1>Classification Results</h1>
-                <dl>
-                    <dt>For each pull request, extract:</dt>
-                    <dd>user, creation time, commenters, comment length, neutral, pos, neg</dd>
-                    <dt>For projects with large comment dataset, randomly select 70% for training and 30% for validation.</dt>
-                    <dd></dd>
-                    <dt>Train the data with Random Forests</dt>
-                    <dd>Good for classification with high accuracy</dd>
-                    <dd>Detect variable interaction</dd>
-                    <dd>Training accuracy and variable importance are provided</dd>
-                </dl>
+                <ul>
+                    <li>Most classifiers have good performance, but cross-test is bad:<br>
+                    akka * homebrew: accuracy 0.104</li>
+                    <li>Usually, users' reputation matters.</li>
+                    <li>Surprisingly, for most projects, neutral comments are indicators of merge.</li>
+                    <li>Exceptions exist: <br>
+                        <strong>mongo</strong>'s merge decision is highly relevant to creation time.<br>
+                        <strong>reddit</strong>'s merge decision is not relevant to users' reputation but highly depends on comment sentiment.
+                    </li>
+                </ul>
 
 			</div>
+
 		</div>
 
 		<div class="ft-section" data-id="section-5">
 			<div id="/section-5/page-1" class="ft-page" data-id="page-1">
-				<h1>Image Management</h1>
-				<p>Images are fluid like all the other content.</p>
-				<p>You can insert images in the flow or stack images ones on top the others with a minimal markup overhead to create some fancy fragments tricks.</p>
-				<p>Go to the next pages to see fluid images in action and how stacked images can be managed, both in the flow or centered in the slide.<br>
-					Look at the source code to learn how to write the markup.</p>
+				<h1>Pull Request Merge Time</h1>
+                <p>Pull request merge time varies from few minutes up to a week.</p>
+                <img src="img/boxplot.png" style="height: 350px;width:500px;float:left;margin-left: 100px;">
+                <img src="img/log.png" style="height: 350px;width:350px;float:right;margin-right: 100px;">
 			</div>
-			<div id="/section-5/page-2" class="ft-page" data-id="page-2" data-title="Fluid Images">
-				<a href="http://www.genereavventura.com" target="_blank"><img src="assets/img/genereavventura.jpg"></a>
-			</div>
+			<div id="/section-5/page-2" class="ft-page parallax-demo" data-id="page-2">
+				<h1>Major vs Random Contributors</h1>
+                <p>For most projects, both major contributors and random contributors have equal chances to get their pull requests accepted
+                    within the same time boundaries.</p>
+                <center><img src="img/equal.png" style="height: 300px;width: 900px;"></center>
+
+            </div>
 			<div id="/section-5/page-3" class="ft-page" data-id="page-3">
-				<h1>Stacked Images</h1>
-				<div class="stack">
-					<div class="stacked"><img src="assets/img/mi1-stacked-0.png"></div>
-					<div class="ft-fragment stacked"><img src="assets/img/mi1-stacked-1.png"></div>
-					<div class="ft-fragment stacked"><img src="assets/img/mi1-stacked-2.png"></div>
-					<div class="ft-fragment stacked"><img src="assets/img/mi1-stacked-3.png"></div>
-					<div class="ft-fragment stacked"><img src="assets/img/mi1-stacked-4.png"></div>
-					<div class="ft-fragment stacked"><img src="assets/img/mi1-stacked-5.png"></div>
-					<div class="ft-fragment stacked"><img src="assets/img/mi1-stacked-6.png"></div>
-				</div>
+				<h1>Who Gets the Priority?</h1>
+				<p>What if coexistence happens?</p>
+                <center><img src="img/story.png" style="height: 400px;width:800px;"></center>
 			</div>
-			<div id="/section-5/page-4" class="ft-page" data-id="page-4">
-				<div class="stack-center">
-					<h1 class="stacked-center">Centered Stacked Images</h1>
-				</div>
-				<div class="ft-fragment stack-center"><img class="stacked-center" src="assets/img/mi2-concept-art.jpg"></div>
-				<div class="ft-fragment stack-center"><img class="stacked-center" src="assets/img/mi2-original.jpg"></div>
-				<div class="ft-fragment stack-center"><img class="stacked-center" src="assets/img/mi2-special-edition.jpg"></div>
-			</div>
-			<div id="/section-5/page-5" class="ft-page" data-id="page-5">
-				<div class="stack-center">
-					<div class="stacked-center">
-						<h1>About the Centered Stack</h1>
-						<p class="ft-fragment">You can center anything, not only images!</p>
-						<p class="ft-fragment">Just like this content.<br>Useful for splash pages and titles.</p>
-						<p class="ft-fragment">And you are not limited to stacks, you can center what you want.</p>
-					</div>
-				</div>
-			</div>
+            <div id="/section-5/page-4" class="ft-page" data-id="page-4">
+                <h1>Who Gets the Priority?</h1>
+                <p>Two-sample t-test shows a difference:<br> random contributors have significantly lower average merge time.</p>
+                <center><img src="img/diff.png" style="height: 250px;width: 800px;"></center>
+            </div>
 		</div>
 
 		<div class="ft-section" data-id="section-6">
 			<div id="/section-6/page-1" class="ft-page" data-id="page-1">
-				<h1>Native Parallax Support</h1>
-				<p>By popular demand Flowtime.js includes native parallax support*.</p>
-				<p>Simply add a <code>parallax</code> class to anything you want to have parallax enabled and configure the amount of distance for all elements or for a single element using <code>data-parallax</code> attribute.</p>
-				<p>For an example go to the <a href="#/section-6/page-2">next page</a>; for more info read the <a href="https://github.com/marcolago/flowtime.js" target="_blank">documentation</a>.</p>
-				<p><span class="small">* By the way: I’m not a parallax fan; but ehi… this is the "web 3.0".</span></p>
-			</div>
-			<div id="/section-6/page-2" class="ft-page parallax-demo" data-id="page-2">
-				<h1>The Invaders from Audiogalaxy</h1>
-				<img class="kingmix parallax" src="assets/img/kingmix.png" data-parallax="1500,1500">
-				<img class="sax parallax" src="assets/img/sax.png" data-parallax="750,750">
-				<img class="tone parallax" src="assets/img/tone.png" data-parallax="500,500">
-			</div>
-			<div id="/section-6/page-3" class="ft-page" data-id="page-3">
-				<h1>This Page Is Just for Testing the Parallax</h1>
-				<p>In the previous page, from left to right:</p>
-				<dl>
-					<dt>Sax:</dt>
-						<dd>King Mix’s most trusted servant. After a diploma in the music conservatory in the…</dd>
-					<dt>King Mix:</dt>
-						<dd>son of the noble dynasty of the Mix of Censor, he soon shows his…</dd>
-					<dt>Tone:</dt>
-						<dd>the most feared space intruder on Mixer. He flunked the musical exam…</dd>
-				</dl>
-				<p>More info about this villains on <a href="http://www.genereavventura.com" target="_blank">www.genereavventura.com</a>.
-			</div>
-		</div>
-
-		<div class="ft-section" data-id="section-7">
-			<div id="/section-7/page-1" class="ft-page" data-id="page-1">
-				<h1>Code Snippets Highlight</h1>
-				<p>Code highlight is a courtesy of <a href="http://prismjs.com/" target="_blank">Lea Verou’s Prism</a>.<br>Because I really didn’t want to re-invent the wheel.<br><span class="small">You can use what you want, it’s not a dependency (but it’s very smart and cool).</span></p>
-				<pre><code class="language-javascript">function saySomethingSmart()
-{
-	alert("The bad craftsman blames his tools!");
-}</code></pre>
-				<pre><code class="language-css">.is-not-water {
-	display: inline-block;
-}</code></pre>
-				<pre><code class="language-markup">&lt;h1&gt;The Bad Craftsman Blames His Tools!&lt;/h1&gt;</code></pre>
+				<h1>Wrap Up</h1>
+				<p>.....</p>
 			</div>
 
-			<div id="/section-7/page-2" class="ft-page" data-id="page-2">
-				<h1>Events and Custom Implementations</h1>
-				<p>When navigated to a page Flowtime.js fires a custom <code>flowtimenavigation</code> event full of useful properties to customize or build your components or behaviours.</p>
-				<p>Read the <a href="https://github.com/marcolago/flowtime.js" target="_blank">documentation</a> to learn more about this event and its properties.</p>
-			</div>
-		</div>
-
-		<div class="ft-section" data-id="section-8">
-			<div id="/section-8/page-1" class="ft-page" data-id="page-1">
-				<h1>Use It! It’s Free</h1>
-				<p>This project is open source, feel free to contribute to the development on <a href="https://github.com/marcolago/flowtime.js" target="_blank">Github</a>.</p>
-				<p>Feedbacks, suggestions and bug reports are welcomes.</p>
-				<p>Use it as you wish and build great things.<br>And when you’ll have done let me know the URL, I will appreciate it.</p>
-			</div>
-
-			<div id="/section-8/page-2" class="ft-page" data-id="page-2">
+			<div id="/section-6/page-2" class="ft-page" data-id="page-2">
                 <div class="stack-center">
                     <div class="stacked-center">
                         <h2>Thank you.</h2>
