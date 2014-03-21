@@ -61,7 +61,7 @@
         <h1>Collaborative Development Models </h1>
         <ul>
             <li><strong>Commit + Push</strong>   - require push access to the repository</li>
-            <li><strong>Fork + Pull Request</strong>  - anyone can do that. If your code is appropriate, it can be merged into the origin repository.</li>
+            <li><strong>Fork + Pull Request</strong>  - anyone can do that. If your code is accepted, it can be merged into the origin repository.</li>
         </ul>
         <center><img class="stacked-center" src="img/pullreq.gif" height="350" width="600" ></center>
     </div>
@@ -70,14 +70,14 @@
         <ol>
             <li>What are the collaborative patterns like for open source projects, especially those popular and large ones?</li>
             <li>What are the indicators that can predict if a pull request can be merged eventually? </li>
-            <li>What factors will effect the merge time for pull requests? </li>
+            <li>What is the merge time for pull requests from major contributors and random contributors? </li>
         </ol>
     </div>
     <div id="/section-2/page-4" class="ft-page" data-id="page-4">
         <h1>Dataset</h1>
         <p>Extracted from GHTorrent (a Ruby web crawler) by Georgios Gousios.</p>
         <ul>
-            <li>It includes data from the most popular repositories on Github, which gives 91 origin projects and their forks.</li>
+            <li>It contains data from the most popular repositories on Github, which gives 91 origin projects and their forks.</li>
             <li>For each project, retrieved all data including issues, pull requests organizations, followers, stars and labels.</li>
         </ul>
 
@@ -146,7 +146,7 @@
 <div class="ft-section" data-id="section-4">
     <div id="/section-4/page-1" class="ft-page" data-id="page-1">
         <h1>Merge or Not?</h1>
-        <p>Popular projects will receive a bunch of pull requests from a variety groups of users.
+        <p>Popular projects will receive pull requests from a variety groups of users.
             However, they have large differences in pull request merge rate:</p>
         <center><table style="width:600px;text-align:center;font-size:1.3rem;height:270px;" border="1">
             <tr>
@@ -327,7 +327,12 @@
 <div class="ft-section" data-id="section-6">
     <div id="/section-6/page-1" class="ft-page" data-id="page-1">
         <h1>Wrap Up</h1>
-        <p>.....</p>
+        <ul>
+            <li>Pull request is preferred by large projects to manage and trace code commits.</li>
+            <li>The most active users are not necessarily in the core development team.</li>
+            <li>For most projects examined, the reputation of users and neutrality of comments can be indicators of if pull requests can be merged.</li>
+            <li>When coexistence of pull requests from major contributors and random contributors, the later group have the priority. </li>
+        </ul>
     </div>
 
     <div id="/section-6/page-2" class="ft-page" data-id="page-2">
